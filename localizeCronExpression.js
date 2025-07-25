@@ -1,4 +1,4 @@
-function isNumber (n) => typeof n === 'number' || (typeof n === 'string' && n.trim() !== '' && !isNaN(Number(n)))
+const isNumber = (n) => typeof n === 'number' || (typeof n === 'string' && n.trim() !== '' && !isNaN(Number(n)))
 
 export function LocalizeCronExpression (cron, offset=0, options={}) {
     //Offset in minutes
